@@ -1,0 +1,136 @@
+/*Universal Styles*/
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0; /*for fixed header*/
+}
+
+h1 {
+font-size: 2.5rem;
+font-family: 'Montserrat', sans-serif;
+color: #4A4A4A;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #4A4A4A;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+/*Header*/
+header {
+  display: flex;
+  position: fixed;
+  background-color: yellow;
+  max-width: 1200px;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  z-index: 1;
+  justify-content: space-between;
+  }
+
+div.logo {
+  display: flex;
+  align-items: center;
+
+ }
+.logo img {
+  width: 70px;
+  height: 60px;
+  padding-left: 1.5rem;
+
+ }
+.company-name span:first-child{
+  font-family: 'Ubuntu 700', sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 2rem;
+ }
+
+ .company-name span:last-child{
+   font-family: 'Ubuntu 400', sans-serif;
+   color: grey;
+   font-size: 2rem;
+  }
+
+nav ul {
+  padding-right: 1.5rem;
+}
+
+nav ul li {
+  font-family: "Catamaran", serif;
+  display: inline-block;
+  padding-left: 1rem;
+ }
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+  }
+/*SECTION*/
+/*Section One*/
+.section {
+  display: flex;
+  max-width: 75rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.section-one {
+  background-color: #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.one-left {
+  width: 60%;
+  margin: 2rem 1rem;
+}
+
+.one-left img {
+ width: 100%;
+}
+.one-right {
+ width: 40%;
+ margin-left: 2rem;
+}
+
+.one-right h1 {
+  padding-bottom: 2.5rem;
+  margin-top: -5rem;
+  line-height: 3rem;
+}
+
+.one-right h2 {
+  padding-bottom: 2.5rem;
+  line-height: 1.75rem;
+}
+
+.one-right .button {
+ background-color: #4A4A4A;
+ padding: 0.5rem 8rem;
+ text-align: center;
+ display: inline-block;
+}
+
+.button:hover {
+  background-color: red;
+  transition: background-color 300ms linear 100ms;
+}
+
+.one-right .button span {
+  font-family: 'Catamaran', serif;
+  font-size: 1.125rem;
+  color: white;
+}
