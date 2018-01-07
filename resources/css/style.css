@@ -19,6 +19,21 @@ h2 {
   color: #4A4A4A;
 }
 
+h3 {
+  font-size: 1.125rem;
+  font-family: "Catamaran", san-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #4A4A4A;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Catamaran", san-serif;
+  line-height: 1.2;
+  color: #7B7B7B;
+}
+
 .container {
   max-width: 75rem;
   margin: 0 auto;
@@ -81,6 +96,7 @@ nav ul li a{
   max-width: 75rem;
   width: 100%;
   justify-content: center;
+  flex-direction: column;
 }
 
 .section-one {
@@ -95,7 +111,7 @@ nav ul li a{
 
 .one-left {
   width: 60%;
-  margin: 2rem 1rem;
+  margin: 2rem 1.5rem;
 }
 
 .one-left img {
@@ -133,4 +149,131 @@ nav ul li a{
   font-family: 'Catamaran', serif;
   font-size: 1.125rem;
   color: white;
+}
+
+/*Section Two*/
+.section-two {
+  background-color: #ffffff;
+  display: flex;
+  max-width: 75rem;
+  width: 100%;
+}
+
+/*Section Two Left*/
+.section-two-left {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.two-left-image img {
+ width: 100%;
+
+}
+
+.two-left-text h1 {
+  padding: 1.5rem 0;
+}
+
+.two-left-text p {
+  padding-bottom: 2.5rem;
+}
+
+.two-left-text span {
+  font-family: "Catamaran", serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+/*Section Two Right*/
+.section-two-right {
+ width: 40%;
+ margin: 1rem 0 1rem 1.5rem;
+ overflow: hidden;
+}
+
+.two-right-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+
+}
+
+.two-right-block:first-child {
+  border-bottom: 0.25rem solid #d8d8d8;
+
+}
+.two-right-block:last-child {
+  background-color: #d8d8d8;
+}
+
+.two-block-image {
+  width: 35%;
+  height: auto;
+}
+
+.two-block-image img {
+  width: 100%;
+
+}
+
+.two-block-text p {
+  padding: 1rem 0;
+
+}
+
+.two-block-text a {
+  font-size: 1rem;
+  font-family: "Catamaran", san-serif;
+  color: #6CCFF6;
+  text-decoration: none;
+}
+
+.two-block-text a:hover {
+  color: white;
+  background-color: red;
+  padding: .25rem;
+}
+  /*Section Three*/
+.section-three {
+background-color: #d8d8d8;
+}
+
+.section-three h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.three-main-container {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin: 1rem 3.5rem;
+
+}
+
+.three-program-block {
+  width: 29.5%;
+  overflow: hidden;
+  background-color: white;
+  margin: 1rem;
+}
+
+.three-program-block img {
+ height: auto;
+ width: 100%;
+
+}
+
+.three-block-text {
+  background-color: white;
+  padding-top: 1rem;
+  height: 100%;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.three-block-text-p p:first-child {
+  padding: 1rem 0;
 }
