@@ -90,6 +90,21 @@ nav ul li a{
     color: black;
     text-decoration: none;
   }
+
+  header.mobile-menu {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+  header.mobile-menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  header {
+    display: none;
+  }
+}
+
 /*SECTION*/
 /*Section One*/
 .section {
@@ -104,28 +119,32 @@ nav ul li a{
   background-color: #d8d8d8;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: 4rem;
   max-width: 75rem;
-  width: 100%;
+  padding: 2rem 1.5rem;
 }
 
 .one-left {
   width: 60%;
-  margin: 2rem 1.5rem;
 }
 
 .one-left img {
- width: 100%;
+  width: 100%;
+
 }
 .one-right {
- width: 40%;
- margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.one-right-text {
+  margin: 0 2rem 0 1.5rem;
 }
 
 .one-right h1 {
+
   padding-bottom: 2.5rem;
-  margin-top: -5rem;
   line-height: 3rem;
 }
 
@@ -138,7 +157,7 @@ nav ul li a{
  background-color: #4A4A4A;
  padding: 0.5rem 8rem;
  text-align: center;
- display: inline-block;
+ display: block;
 }
 
 .button:hover {
@@ -150,6 +169,34 @@ nav ul li a{
   font-family: 'Catamaran', serif;
   font-size: 1.125rem;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-one {
+    flex-direction: column;
+    padding: 0 0 2rem 0;
+  }
+  .one-left {
+    margin: 0;
+    width: 100%;
+  }
+  .one-right {
+    width: auto;
+    }
+
+  .one-right-text {
+    margin: 2rem 1rem 0 1rem;
+    }
+
+  .one-right-text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding-bottom: 2rem;
+  }
+
+  .one-right-text h2 {
+    padding-bottom: 1.5rem;
+  }
 }
 
 /*Section Two*/
@@ -193,9 +240,7 @@ nav ul li a{
 .two-right-block {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   padding: 1rem;
-
 }
 
 .two-right-block:first-child {
@@ -214,6 +259,10 @@ nav ul li a{
   width: 100%;
 }
 
+.two-block-text {
+  padding-left: 1rem;
+  width: 65%;
+}
 .two-block-text p {
   padding: 1rem 0;
 }
@@ -229,6 +278,40 @@ nav ul li a{
   color: white;
   background-color: red;
   padding: .25rem;
+}
+
+img.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-two-left {
+    display: none;
+  }
+
+  .section-two-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+  .two-right-block {
+   flex-direction: column;
+  }
+
+  .two-block-image {
+    width: 100%;
+  }
+  .two-block-image img {
+   display: none;
+  }
+  img.mobile {
+    display: block;
+  }
+  .two-block-text {
+    padding: 1rem;
+    width: 100%;
+  }
 }
   /*Section Three*/
 .section-three {
@@ -270,6 +353,32 @@ background-color: #d8d8d8;
 
 .three-block-text-p p:first-child {
   padding: 1rem 0;
+}
+
+.three-program-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-three {
+  background-color: #ffffff;
+  }
+
+  .three-main-container {
+    margin: 1rem;
+  }
+  .three-program-block {
+    display: none;
+  }
+
+  .three-program-mobile {
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+    background-color: #d8d8d8;
+    padding: 1rem 0 1.5rem 1rem;
+    vertical-align: middle;
+  }
 }
 
   /*Section Four*/
@@ -314,7 +423,6 @@ background-color: #d8d8d8;
 
 .four-block-image {
   width: 35%;
-  height: auto;
 }
 
 .four-block-image img {
@@ -329,18 +437,32 @@ background-color: #d8d8d8;
   padding: 1rem 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .four-main-container {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .section-four-right {
+    display: none;
+  }
+  .four-left-text {
+    display: none;
+  }
+  .section-four-left {
+    width: 100%;
+  }
+}
+
   /*Footer*/
 
 footer {
   display: flex;
   justify-content: space-between;
-border-top: 0.125rem solid #d8d8d8;
+  border-top: 0.125rem solid #d8d8d8;
   padding: 1rem;
-
 }
 
 .footer-info span {
-
   font-family: "Catamaran", serif;
   padding-left: 1.5rem;
   color: #7b7b7b;
@@ -348,7 +470,16 @@ border-top: 0.125rem solid #d8d8d8;
 }
 
 .footer-nav ul li a {
-
   color: #7b7b7b;
   font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    border: none;
+  }
+
+  .footer-nav {
+    display: none;
+  }
 }
