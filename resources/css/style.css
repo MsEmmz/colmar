@@ -16,7 +16,7 @@ color: #4A4A4A;
 h2 {
   font-size: 1.25rem;
   font-family: 'Montserrat', sans-serif;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 h3 {
@@ -24,14 +24,14 @@ h3 {
   font-family: "Catamaran", san-serif;
   font-weight: bold;
   letter-spacing: 0.5px;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 p {
   font-size: 1rem;
   font-family: "Catamaran", san-serif;
   line-height: 1.2;
-  color: #7B7B7B;
+  color: #7b7b7b;
 }
 
 .container {
@@ -227,7 +227,7 @@ nav ul li a{
   font-family: "Catamaran", serif;
   font-size: 0.75rem;
   font-weight: bold;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 /*Section Two Right*/
@@ -275,9 +275,12 @@ nav ul li a{
 }
 
 .two-block-text a:hover {
-  color: white;
-  background-color: red;
-  padding: .25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.fa-play {
+  color: #7b7b7b;
 }
 
 img.mobile {
@@ -350,6 +353,11 @@ background-color: #d8d8d8;
   height: 100%;
   padding: 1rem 1rem 1.5rem 1rem;
 }
+
+.three-block-text h3:hover {
+  text-decoration: underline;
+}
+
 
 .three-block-text-p p:first-child {
   padding: 1rem 0;
